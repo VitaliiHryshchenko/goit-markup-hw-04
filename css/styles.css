@@ -79,6 +79,7 @@ h1,h2,h3,h4,h5,h6,p {
       line-height: 1.5;
       letter-spacing: 0.02em;
       color: #2E2F42;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
    } 
 .list-nav .link:hover,
 .list-nav .link:focus {
@@ -87,9 +88,10 @@ h1,h2,h3,h4,h5,h6,p {
 .page-contacts {
       font-size: 16px;
       font-weight: 400;
-      line-height: 24px;
+      line-height: 1.5;
       letter-spacing: 0.02em;
       color: #434455;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .page-contacts:hover,
 .page-contacts:focus {
@@ -98,13 +100,6 @@ h1,h2,h3,h4,h5,h6,p {
 .list-contacts {
       display: flex;
       gap: 40px;
-} 
-.section-two .section-title {
-      color: #2e2f42;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 40px;
-      letter-spacing: 0.02em;
 } 
 .category {
       font-size: 20px;
@@ -121,33 +116,15 @@ h1,h2,h3,h4,h5,h6,p {
       letter-spacing: 0.02em;
       color: #2e2f42;
 }
-.closed-part {
-      background-color: #2e2f42;
-}
-.closed-part .logo{
-      text-transform: uppercase;
-      font-family: "Raleway", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
-      color: #4D5AE5;
-}
-.closed-part .logo-studio{
-      color: #F4F4FD;
-}
-.closed-part .text-part {
-      color: #F4F4FD;
-}
   /* ========== section-one ==========*/
   .section-one {
-      max-width: 100%;
       background-color: #2e2f42;
       padding: 188px 0;
       text-align: center;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg_people_office.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
 }
   .title {
       font-size: 56px;
@@ -180,6 +157,13 @@ h1,h2,h3,h4,h5,h6,p {
       background-color: #404BBF;
 }
   /* ========== section-two ========== */
+.section-two .section-title {
+      color: #2e2f42;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0.02em;
+}
   .section-two {
       padding: 120px 0;
 }
@@ -215,8 +199,6 @@ h1,h2,h3,h4,h5,h6,p {
       justify-content: space-between;
       gap: 24px;
       align-items: center;
-     
-      
 }
 .menu-icon .list-icon {
       flex-grow: 1;
@@ -268,6 +250,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .menu-three .image-three{
       width: calc((100% - 72px) / 4);
+      box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.016), 0 2px 1px 0 rgba(46, 47, 66, 0.08) ;
 }
   .image-three {
     width: 264px;
@@ -293,14 +276,21 @@ h1,h2,h3,h4,h5,h6,p {
       border-radius: 50%;
       background-color: #4D5AE5;
       justify-content: center;
-      align-items: center;     
-  }
-.list-name-icon:hover,
-.list-name-icon:focus  {
-      background-color: #404BBF;
+      align-items: center;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
       cursor: pointer;
 }
-
+.list-name-icon:hover,
+.list-name-icon:focus {
+      background-color: #404BBF;
+}
+.list-name-icon .link-icon {
+      display: block;
+      line-height: 0;
+      width: 100%;
+      text-align: center;
+}
+      
 
   /* ========== section-four =========== */
   .section-four {
@@ -326,12 +316,36 @@ h1,h2,h3,h4,h5,h6,p {
       
 }
 
-.list-four .menu-four {
-      width: calc((100% - 72px) / 4);
+.menu-four .list-four  {
+      width: calc((100% - 72px) / 3);
+}
+.menu-four .list-four:hover {
+      box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 /* ========== footer ========== */
 .closed-part{
       padding: 100px 0;
+}
+.closed-part {
+      background-color: #2e2f42;
+}
+
+.closed-part .logo {
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      color: #4D5AE5;
+}
+
+.closed-part .logo-studio {
+      color: #F4F4FD;
+}
+
+.closed-part .text-part {
+      color: #F4F4FD;
 }
 .text-part {
       width: 264px;
