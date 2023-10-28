@@ -187,9 +187,9 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .menu-icon {
       display: flex;
-
       justify-content: space-between;
-    }
+      height: 120px;
+      }
 
 .list-icon-container {
       display: flex;
@@ -197,14 +197,13 @@ h1,h2,h3,h4,h5,h6,p {
       align-items: center;
       height: 112px;
       width: 264px;
-}
-.list-icon {
+      background-color: #f4f4fd;
       border-radius: 4px;
-      background-color: #F4F4FD;
+      margin-bottom: 8px;
       border: 1px solid #8E8F99;
       gap: 24px;
-      margin-bottom: 8px;
 }
+
 .container .menu-two {
       display: flex;
       gap: 24px;
