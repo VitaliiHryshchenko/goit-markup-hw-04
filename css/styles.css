@@ -223,6 +223,8 @@ h1,h2,h3,h4,h5,h6,p {
   .section-three .image-three {
       background-color: #ffffff;
       border-radius: 0px 0px 4px 4px;
+      width: 264px;
+      box-shadow: 0 1px 6px rgba(46, 47, 66, 8%), 0 1px 1px rgba(46, 47, 66, 16%), 0 2px 1px rgba(46, 47, 66, 8%);
 }
 
   .section-three .section-title {
@@ -238,7 +240,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
   .name-team {
       text-align: center;
-      padding: 32px 0 8px 0;
+      padding: 32px 0 32px 0;
 }
 
   .section-three .text-three {
@@ -246,6 +248,7 @@ h1,h2,h3,h4,h5,h6,p {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+      margin-bottom: 8px;
 }
   .container .menu-three {
       display: flex;
@@ -253,12 +256,8 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .menu-three .image-three{
       width: calc((100% - 72px) / 4);
-      box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.016), 0 2px 1px 0 rgba(46, 47, 66, 0.08) ;
 }
-  .image-three {
-    width: 264px;
-}
-  .name-team .category {
+.name-team .category {
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -267,32 +266,32 @@ h1,h2,h3,h4,h5,h6,p {
   }
   .name-icon {
       display: flex;
-      padding-bottom: 32px;
       justify-content: center;
       column-gap: 24px;
       
   }
   .list-name-icon {
-      display: flex;
       width: 40px;
       height: 40px;
+background-color: #4D5AE5;
       border-radius: 50%;
-      background-color: #4D5AE5;
+  }
+  .list-name-icon .link-icon {
+      display: flex;
       justify-content: center;
       align-items: center;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-      cursor: pointer;
-}
-.list-name-icon:hover,
-.list-name-icon:focus {
-      background-color: #404BBF;
-}
-.list-name-icon .link-icon {
-      display: block;
-      line-height: 0;
       width: 100%;
-      text-align: center;
-}
+      height: 100%;
+      border-radius: 50%;
+      
+  }
+  .link-icon:hover,
+  .link-icon:focus {
+      background-color:#404bbf;
+  }
+  .social-link-icon {
+      fill: #f4f4fd;
+  }
       
 
   /* ========== section-four =========== */
