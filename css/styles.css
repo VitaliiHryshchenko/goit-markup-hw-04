@@ -105,7 +105,8 @@ header {
       height: 4px;
       background-color: #404BBF;
       border-radius: 2px;
-      content: '';      
+      content: '';  
+      color:#404bbf;    
 }
 .page-contacts {
       font-size: 16px;
