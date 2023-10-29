@@ -61,7 +61,7 @@ header {
 .list-nav .link {
       padding: 24px 0;
 }
-.menu-nav-item .link {
+.menu-nav-item {
       color: #404bbf;
 }
 .page-head .logo{
@@ -386,6 +386,7 @@ transform: translateY(0%);
 }
 .closed-part .container{
       display: flex;
+      align-items: baseline;
       
       }
 .closed-part-footer {
@@ -428,6 +429,12 @@ transform: translateY(0%);
       letter-spacing: 0.02em;
       
 }
- .link-footer-icon:hover {
+ .link-footer-icon:hover,
+ .link-footer-icon:focus {
       background-color: #31D0AA;
+}
+.footer-icon .name-icon {
+      display: flex;
+      gap: 16px;
+
 }
