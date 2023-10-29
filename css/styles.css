@@ -38,11 +38,14 @@ h1,h2,h3,h4,h5,h6,p {
 .page-head {
       border-bottom: 1px solid #E7E9FC;
       padding: 24px 0;
-      
 }
 .page-head .container {
       display: flex;
       justify-content: space-between;
+      box-shadow: 
+      0 1px 6px rgba(46, 47, 66, 0.08), 
+      0 1px 1px rgba(46, 47, 66, 0.16), 
+      0 2px 1px rgba(46, 47, 66, 0.08);
 }
 .container .head-nav {
       display: flex;
@@ -81,7 +84,9 @@ h1,h2,h3,h4,h5,h6,p {
       letter-spacing: 0.02em;
       color: #2E2F42;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      color: #404bbf;
 } 
+
 .list-nav .link:hover,
 .list-nav .link:focus {
       color: #404bbf;
@@ -94,14 +99,8 @@ h1,h2,h3,h4,h5,h6,p {
       background-color: #404BBF;
       border-radius: 2px;
       left: 0;
-      bottom: -1xp;
+      bottom: -1px;
       content: '';      
-}
-.page-head .container {
-      box-shadow: 
-      0 1px 6px rgba(46, 47, 66, 0.08), 
-      0 1px 1px rgba(46, 47, 66, 0.16), 
-      0 2px 1px rgba(46, 47, 66, 0.08);
 }
 .page-contacts {
       font-size: 16px;
